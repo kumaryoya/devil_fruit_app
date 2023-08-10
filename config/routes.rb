@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root "top#index"
+  get 'devil_fruit/index'
+  get 'devil_fruit/result'
+  root 'devil_fruit#index'
 end
