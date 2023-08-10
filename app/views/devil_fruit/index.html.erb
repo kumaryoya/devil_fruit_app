@@ -1,0 +1,13 @@
+<%= form_tag devil_fruit_result_path, method: :get do %>
+  <%= label_tag :name, '名前:' %>
+  <%= text_field_tag :name %>
+  <%= submit_tag '悪魔の実を食べる' %>
+<% end %>
+<% if @error_message %>
+  <p><%= @error_message %></p>
+<% elsif @devil_fruit %>
+  <%= "#{@name}は#{@devil_fruit}を食べた！" %>
+  <%= link_to "https://twitter.com/share?url=https://www.zoomania.top/zoos/ranking/&text=「#{@name}は#{@devil_fruit}を食べた！」%0A&hashtags=DevilFruitApp&hashtags=#{@devil_fruit}", class: 'btn btn-secondary text-white', target: '_blank' do %>
+    共有
+  <% end %>
+<% end %>
