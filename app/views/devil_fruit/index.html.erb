@@ -7,7 +7,7 @@
   <p><%= @error_message %></p>
 <% elsif @devil_fruit %>
   <%= "#{@name}は#{@devil_fruit}を食べた！" %>
-  <%= link_to "https://twitter.com/share?url=https://www.zoomania.top/zoos/ranking/&text=「#{@name}は#{@devil_fruit}を食べた！」%0A&hashtags=DevilFruitApp&hashtags=#{@devil_fruit}", class: 'btn btn-secondary text-white', target: '_blank' do %>
+  <%= link_to "https://twitter.com/share?url=https://www.zoomania.top/zoos/ranking/&text=「#{@name}は#{@devil_fruit}を食べた！」%0A&hashtags=DevilFruitApp&hashtags=#{@devil_fruit}", target: '_blank' do %>
     共有
   <% end %>
 <% end %>
