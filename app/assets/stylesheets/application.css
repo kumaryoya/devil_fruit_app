@@ -29,7 +29,6 @@
   background-image: url("main.jpg");
   background-size: cover;
   background-position: center;
-  max-height: 100vh;
   animation: animateBackground 3s linear infinite alternate;
 }
 
