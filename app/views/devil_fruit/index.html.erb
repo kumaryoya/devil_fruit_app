@@ -1,9 +1,9 @@
-<div class="main_image">
+<div class="main_image" style="height: 100vh;">
   <div class="text-center">
     <div class="pt-20">
       <div class="md:grid justify-items-stretch">
         <div class="font-bold md:w-2/3 xl:w-1/3 justify-self-center text-5xl pb-20">Devil Fruit App</div>
-        <div style="position: relative; text-align: center;" class="pb-10">
+        <div style="text-align: center;" class="pb-10">
           <%= form_tag devil_fruit_result_path, method: :get do %>
             <%= label_tag :name, '名前:' %>
             <%= text_field_tag :name %><br>
@@ -22,3 +22,4 @@
     </div>
   </div>
 </div>
+
