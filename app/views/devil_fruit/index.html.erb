@@ -1,8 +1,8 @@
-<div class="main_image" style="height: 100vh;">
+<div class="main_image" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
   <div class="text-center">
     <div class="pt-20">
       <div class="md:grid justify-items-stretch">
-        <div class="font-bold md:w-2/3 xl:w-1/3 justify-self-center text-5xl pb-20">Devil Fruit App</div>
+        <div class="font-bold justify-self-center text-5xl">Devil Fruit App</div>
         <div style="text-align: center;" class="pb-10">
           <% unless @devil_fruit %>
             <%= form_tag devil_fruit_result_path, method: :get do %>
@@ -14,10 +14,14 @@
           <% if @error_message %>
             <p><%= @error_message %></p>
           <% elsif @devil_fruit %>
-            <%= "#{@name}は#{@devil_fruit}を食べた！" %><br>
-            <%= link_to "https://twitter.com/share?url=https://www.zoomania.top/zoos/ranking/&text=「#{@name}は#{@devil_fruit}を食べた！」%0A&hashtags=DevilFruitApp&hashtags=#{@devil_fruit}", class: 'btn btn-secondary text-white', target: '_blank' do %>
-              共有
-            <% end %>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              <%= image_tag 'don.png', size: '300x200' %>
+              <%= "#{@name}は#{@devil_fruit}を食べた！" %><br>
+              <%= link_to "https://twitter.com/share?url=https://www.zoomania.top/zoos/ranking/&text=「#{@name}は#{@devil_fruit}を食べた！」%0A&hashtags=DevilFruitApp&hashtags=#{@devil_fruit}", class: 'btn btn-secondary text-white', target: '_blank' do %>
+                共有
+              <% end %>
+              <%= link_to "もう一つ食べる？", devil_fruit_crush_path, class: 'btn btn-primary' %>
+            </div>
           <% end %>
         </div>
       </div>

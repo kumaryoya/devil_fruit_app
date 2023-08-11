@@ -14,8 +14,8 @@
  *= require_self
  */
 
-.header_image {
-  background-image: url("header.jpeg");
+.crush_image {
+  background-image: url("crush.jpg");
   background-size: cover;
   background-position: center;
 }

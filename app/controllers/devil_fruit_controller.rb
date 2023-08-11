@@ -1,6 +1,8 @@
 class DevilFruitController < ApplicationController
   def index; end
 
+  def crush; end
+
   def result
     @name = params[:name]
     if @name.blank?
