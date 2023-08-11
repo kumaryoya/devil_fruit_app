@@ -12,6 +12,12 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        "white": "#FFFFFF",
+        "brown": "#412E1D",
+        "star": "#c76f23",
+        "twitter": "#3597DE",
+      },
     },
   },
   plugins: [
@@ -19,5 +25,23 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
-  ]
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#412E1D",
+          "info": "#412E1D",
+          "secondary": "#3597DE",
+          "success": "#3597DE",
+          "accent": "#325B2F",
+          "warning": "#325B2F",
+          "neutral": "#69031E",
+          "error": "#69031E",
+        },
+      },
+    ],
+  },
 }
+

@@ -13,3 +13,59 @@
  *= require_tree .
  *= require_self
  */
+
+.header_image {
+  background-image: url("header.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer_image {
+  background-image: url("footer.jpg");
+  background-position: center;
+}
+
+.main_image {
+  background-image: url("main.jpg");
+  background-size: cover;
+  background-position: center;
+  max-height: 100vh;
+}
+
+.post_image {
+  background-image: url("post.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.admin_image {
+  background-image: url("admin.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.paper_image {
+  background-image: url("paper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes rotateY {
+  0% { transform: perspective(500px) rotateY(0deg); }
+  100% { transform: perspective(500px) rotateY(1080deg); }
+}
+
+.animation-rotateY {
+  animation: rotateY 3s;
+}
+
+.small-size {
+  width: 200px;
+  height: auto;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
