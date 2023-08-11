@@ -30,6 +30,7 @@
   background-size: cover;
   background-position: center;
   max-height: 100vh;
+  animation: animateBackground 3s linear infinite alternate;
 }
 
 .post_image {
@@ -68,4 +69,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: center;
+  }
+  100% {
+    background-position: center bottom;
+  }
 }
