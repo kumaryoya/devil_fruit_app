@@ -14,60 +14,11 @@
  *= require_self
  */
 
-.crush_image {
-  background-image: url("crush.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.footer_image {
-  background-image: url("footer.jpg");
-  background-position: center;
-}
-
 .main_image {
   background-image: url("main.jpg");
   background-size: cover;
   background-position: center;
   animation: animateBackground 3s linear infinite alternate;
-}
-
-.post_image {
-  background-image: url("post.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.admin_image {
-  background-image: url("admin.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.paper_image {
-  background-image: url("paper.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-@keyframes rotateY {
-  0% { transform: perspective(500px) rotateY(0deg); }
-  100% { transform: perspective(500px) rotateY(1080deg); }
-}
-
-.animation-rotateY {
-  animation: rotateY 3s;
-}
-
-.small-size {
-  width: 200px;
-  height: auto;
-}
-
-.parent-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes animateBackground {
