@@ -30,6 +30,7 @@
           <div class="pb-10"><%= link_to "https://twitter.com/share?url=https://devil-fruit.onrender.com/&text=#{@name}は【#{@devil_fruit}】を食べた%0A&hashtags=DevilFruitApp", class: 'link link-secondary', target: '_blank' do %>
             Twitterで共有する
           <% end %></div>
+          <%= link_to "最初からやり直す", root_path, class: 'link link-accent pb-10' %>
           <%= link_to "もう一つ食べる", devil_fruit_crush_path, class: 'link link-primary pb-60' %>
         </div>
       <% end %>
